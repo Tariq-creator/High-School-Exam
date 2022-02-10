@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Elevplacering</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css'>
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav class="sidebar">
+        <div class="logo-details"> <!-- Elevplacering -->
+          <i class='bx bxs-graduation'></i>
+          <span class="logo_name">Elevplacering</span>
+        </div>
+        <ul class="nav-links">
+          <li>
+            <div class="iocn-link"> <!-- Mina Klasser -->
+              <a href="#">
+                <i class='bx bxs-bookmarks'></i>
+                <span class="link_name">Mina Klasser</span>
+              </a>
+              <i class='bx bxs-chevron-down arrow'></i>
+            </div>
+            <ul class="sub-menu"> <!-- Klasser -->
+              <li>
+                <a href="#"></a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#"> <!-- Spara Klass -->
+              <i class='bx bx-save'></i>
+              <span class="link_name">Spara Klass</span>
+            </a>
+          </li>
+          <!-- <li>
+            <a href="#"> Skriva ut
+              <i class='bx bxs-file-pdf' ></i>
+              <span class="link_name" id="printClass">Skriv ut</span>
+            </a>
+          </li> -->
+          <li>
+            <div class="iocn-link"> <!-- Utseende -->
+              <a href="#">
+                <i class='bx bx-edit'></i>
+                <span class="link_name">Utseende</span>
+              </a>
+              <i class='bx bxs-chevron-down arrow' ></i>
+            </div>
+            <ul class="sub-menu"> <!-- Bord -->
+              <li>
+                <button onclick="visablitySmall()">Skapa littet bord</button>
+                <button onclick="visablityBig()">Skapa Större bord</button>
+                <button id="rmvPupil">Ta bort alla bord</button>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <div class="profile-details"> <!-- Profile -->
+              <div class="profile-content">
+                <img src="profile.jpg" alt="profile">
+              </div>
+              <div class="profile_name">Tarik Bratic</div>
+              <i class='bx bx-log-out' ></i>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <div class="home-whiteboard">
+        <span>Whiteboard</span>
+      </div>
+      <main id="home-section">
+        <div id="smallWindow" style="display: none;"> <!-- litet Fönster -->
+          <div id="smallWindow-information small-info">
+            <h4>Ange information:</h4>
+            <div id="smallWindow-information-function small-function">
+              <div id="smallWindow-information-pupil info-pupil">
+                Ange elevensnamn:<br/>
+                <input id="small-pupil" type="text"></input>
+              </div>
+              <button id="OnePupil" type="submit">Skapa bordet</button>
+            </div>
+          </div>
+        </div>
+        <div id="bigWindow" style="display: none"> <!-- Stort Fönster -->
+          <div id="bigWindow-information big-info">
+            <h4>Ange information:</h4>
+            <div id="bigWindow-information-function big-function">
+              <div id="bigWindow-information-pupils big-pupils">
+                Ange elevernas namn:<br/>
+                <input id="big-pupilOne"type="text"><br/>
+                <input id="big-pupilTwo" type="text">
+              </div>
+              <button id="TwoPupil" type="submit">Skapa bordet</button>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <script src="myScript.js"></script>
+  </body>
+</html>
