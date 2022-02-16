@@ -1,75 +1,99 @@
 * {
 	margin: 0;
 	padding: 0;
+	overflow: hidden;
+	font-family: 'poppins', sans-serif;
+	color: white;
 	
 }
 
-.grid {
+img.background-img {
+	position: absolute;
+	top: -100px;
+	width: 100%;
+}	
+
+form {
    display: grid;
-   position: absolute;
    grid-template-columns: 1fr 0.5fr 1fr;
-   grid-template-rows: 2fr 2fr 2fr 2fr 2fr 2fr 2fr;
-   height: 80vh;
-   width: 50%;
-   background-color: #3C68A8;
-   color: white;
-   font-family: 'poppins', sans-serif;
-   top: 10%;
-   left: 25%;
+   grid-template-rows: 2.5fr 1.3fr 1.3fr 1.3fr 1.6fr;
+   position: relative;
+   height: 67vh;
+   width: 400px;
+   margin-top: 90px;
+   margin-left: 430px;
+   background-color: #1d1b31;
    border-radius: 10px;
 }
 
-.login-title {
-	grid-column: 2/3;
-	grid-row: 2/3;
+.login-details {
+	position: absolute;
+	top: 25%;
+	left: 16%;
+	grid-column: 1/4;
+	grid-row: 1/2;
 	text-align: center;
+	line-height: 37px;
+	border-bottom: 2px solid white;
+}
+
+.login-details p {
+	font-size: 13px;
+}
+
+.login-user, .login-password, .confirm-password{
+	margin-top: 2px;
+	height: 30px;
+	width: 300px;
+	color: black;
+	font-size: 15px;
+	padding-left: 5px;
+	border: none;
+	border-radius: 2px;
+}
+
+.login-user:focus, .login-password:focus {
+	outline: none;
 }
 
 .user {
 	grid-column: 2/3;
-	grid-row: 3/4;
-}
-
-.login-user {
-	height: 38px;
-	width: 300px;
+	grid-row: 2/3;
 }
 
 .password {
 	grid-column: 2/3;
-	grid-row: 4/5;
+	grid-row: 3/4;
 }
 
-.login-password {
-	height: 38px;
-	width: 300px;
-}
-
-.confirm-password {
+.verify-password {
 	grid-column: 2/3;
-	grid-row: 5/6;
-}
-
-.login-confirm {
-	height: 38px;
-	width: 300px;
+	grid-row: 4/5;
 }
 
 .login-button {
 	grid-column: 2/3;
-	grid-row: 6/7;
-	height: 50px;
-	width: 309px;
+	grid-row: 5/6;
+	height: 30px;
+	width: 300px;
+	background-color: #55517D;
+	border: none;
+	border-radius: 2px;
+}
+
+.login-button:hover {
+  cursor: pointer;
 }
 
 .link {
 	grid-column: 2/3;
-	grid-row: 7/8;
-	font-size: 13px;
+	grid-row: 5/6;
+	margin-top: 35px;
+	font-size: 12.5px;
 }
 
 a {
-	color: white;
+	color: #766FC9;
 	text-decoration: none;
 }
 
