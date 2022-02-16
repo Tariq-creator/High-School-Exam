@@ -1,15 +1,6 @@
 /* Google Fonts Import */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-@media print {
-  .sidebar {
-    display: none;
-  }
-  .home-section {
-    display: block;
-  }
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -17,6 +8,13 @@
   font-family: 'poppins', sans-serif;
   overflow: hidden;
 }
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 20.7fr 80fr 0.2fr;
+  grid-template-rows: 0.2vh 9.3vh 0.5vh 89.5vh;
+}
+
 .sidebar {
   position: fixed;
   top: 0;
@@ -77,11 +75,15 @@
   text-align: center;
   line-height: 50px;
   font-size: 18px;
-  transition: all 0.5s ease;
+  transition: all 0s ease;
 }
 
 .sidebar .nav-links li.showMenu i.arrow {
   transform: rotate(-180deg);
+}
+
+.arrow {
+  cursor: pointer;
 }
 
 .sidebar .nav-links li a {
@@ -112,6 +114,44 @@
   padding: 4px 0;
 }
 
+.sub-menu button {
+	margin-bottom: 5px;
+}
+
+button {
+  color: white;
+  background-color: #55517D;
+  padding: 1px 5px 1px 5px;
+  border-radius: 5px;
+  border: none;
+  text-decoration: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+.crt-header h4{
+	margin-left: 10px;
+}
+
+.crt-smallBench, .crt-bigBench {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	color: white;
+	border-top: 2px white solid;
+}
+
+.smallBench-pupil, .bigBench-pupil {
+	margin-top: 2.5px;
+	margin-bottom: 5px;
+}
+
+.input-pupil {
+	margin-top: 3px;
+	outline: none;
+}
+
 .sidebar .profile-details {
   background: #1d1b31;
   position: fixed;
@@ -120,6 +160,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 6px 0;
+  width: 258px;
 }
 
 .sidebar .profile-details .profile-content {
@@ -142,59 +183,16 @@
   font-weight: 500;
 }
 
-#smallWindow {
-  display: none;
-  top: 100px;
-  left: 300px;
-  position: absolute;
-  height: 150px;
-  width: 400px;
-  border-radius: 10px;
-  background: #11101d;
-  color: white;
-  text-align: center;
-}
-
-#smallWindow h4 {
-  margin-top: 5px;
-  margin-left: 25px;
-  border-bottom: 1px solid white;
-  width: 90%;
-}
-
-#smallWindow #info-pupil {
-  color: white;
-  padding: 10px;
-}
-
-#bigWindow {
-  display: none;
-  top: 90px;
-  left: 300px;
-  position: absolute;
-  height: 160px;
-  width: 400px;
-  border-radius: 10px;
-  background: #11101d;
-  color: white;
-  text-align: center;
-}
-
-#bigWindow h4 {
-  margin-top: 5px;
-  margin-left: 25px;
-  border-bottom: 1px solid white;
-  width: 90%;
-}
-
-#bigWindow #big-pupils {
-  color: white;
-  padding: 10px;
-}
-
 #home-section{
-  position: fixed;
-  left: 260px;
-  width: 1020px;
-  height: 100%;
+  grid-column: 2/3;
+  grid-row: 4/5;
+  background-color: #f3f3df;
+}
+
+.home-whiteboard {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  border: solid 5px #11101d;
+  text-align: center;
+  line-height: 7.5vh;
 }
