@@ -1,0 +1,98 @@
+* {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	font-family: 'poppins', sans-serif;
+	color: white;
+	
+}
+
+img.background-img {
+	position: absolute;
+	top: -100px;
+	width: 100%;
+}	
+
+form {
+   display: grid;
+   grid-template-columns: 1fr 0.5fr 1fr;
+   grid-template-rows: 2.5fr 1.3fr 1.3fr 1.6fr;
+   position: relative;
+   height: 62vh;
+   width: 400px;
+   background-color: #1d1b31;
+   margin-top: 105px;
+   margin-left: 430px;
+   border-radius: 10px;
+}
+
+.login-details {
+	position: absolute;
+	top: 25%;
+	left: 12.5%;
+	grid-column: 1/4;
+	grid-row: 1/2;
+	text-align: center;
+	line-height: 37px;
+	border-bottom: 2px solid white;
+}
+
+.login-details p {
+	font-size: 13px;
+}
+
+.login-user, .login-password {
+	margin-top: 2px;
+	height: 30px;
+	width: 300px;
+	color: black;
+	font-size: 15px;
+	padding-left: 5px;
+	border: none;
+	border-radius: 2px;
+}
+
+.login-user:focus, .login-password:focus {
+	outline: none;
+}
+
+.user {
+	grid-column: 2/3;
+	grid-row: 2/3;
+}
+
+.password {
+	grid-column: 2/3;
+	grid-row: 3/4;
+}
+
+
+.login-button {
+	grid-column: 2/3;
+	grid-row: 4/5;
+	height: 30px;
+	width: 300px;
+	background-color: #55517D;
+	border: none;
+	border-radius: 2px;
+}
+
+.login-button:hover {
+  cursor: pointer;
+}
+
+.link {
+	grid-column: 2/3;
+	grid-row: 4/5;
+	margin-top: 35px;
+	font-size: 12.5px;
+}
+
+a {
+	color: #766FC9;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
