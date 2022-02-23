@@ -115,7 +115,7 @@
 }
 
 .sub-menu button {
-	margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 button {
@@ -131,25 +131,25 @@ button:hover {
   cursor: pointer;
 }
 .crt-header h4{
-	margin-left: 10px;
+  margin-left: 10px;
 }
 
 .crt-smallBench, .crt-bigBench {
-	padding-top: 10px;
-	padding-bottom: 10px;
-	text-align: center;
-	color: white;
-	border-top: 2px white solid;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  color: white;
+  border-top: 2px white solid;
 }
 
 .smallBench-pupil, .bigBench-pupil {
-	margin-top: 2.5px;
-	margin-bottom: 5px;
+  margin-top: 2.5px;
+  margin-bottom: 5px;
 }
 
 .input-pupil {
-	margin-top: 3px;
-	outline: none;
+  margin-top: 3px;
+  outline: none;
 }
 
 .sidebar .profile-details {
@@ -183,7 +183,7 @@ button:hover {
   font-weight: 500;
 }
 
-#home-section{
+#home-section {
   grid-column: 2/3;
   grid-row: 4/5;
   background-color: #f3f3df;
@@ -195,4 +195,10 @@ button:hover {
   border: solid 5px #11101d;
   text-align: center;
   line-height: 7.5vh;
+}
+
+@media print {
+  @page {
+    size: letter landscape;
+  }
 }
