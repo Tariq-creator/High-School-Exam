@@ -11,7 +11,7 @@ if ($conn->connect_error) {
 }
 
 // Create database
-$sql = "CREATE DATABASE firstTime";
+$sql = "CREATE DATABASE loginsystem";
 if ($conn->query($sql) === TRUE) {
   echo "Database created successfully";
 } else {
@@ -20,7 +20,7 @@ if ($conn->query($sql) === TRUE) {
 
 $conn->close();
 
-$conn = new mysqli($servername, $username, $password, 'firstTime');
+$conn = new mysqli($servername, $username, $password, 'loginsystem');
 // Check connection
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
