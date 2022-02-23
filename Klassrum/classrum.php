@@ -40,7 +40,7 @@ include("auth_session.php");
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#"> <!-- Skriv ut -->
               <i class='bx bxs-file-pdf' ></i>
               <button onclick="window.print()">Skriv ut</button>
             </a>
