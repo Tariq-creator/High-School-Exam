@@ -39,12 +39,12 @@ include("auth_session.php");
               <span class="link_name">Spara Klass</span>
             </a>
           </li>
-          <!-- <li> Skriva ut
-            <a href="#"> Skriva ut
+          <li>
+            <a href="#">
               <i class='bx bxs-file-pdf' ></i>
-              <span class="link_name" id="printClass">Skriv ut</span>
+              <button onclick="window.print()">Skriv ut</button>
             </a>
-          </li> -->
+          </li>
           <li> <!-- Utseende -->
             <div class="iocn-link">
               <a href="#">
@@ -61,8 +61,8 @@ include("auth_session.php");
               </li>
             </ul>
           </li>
-		  <li> <!-- litet Fönster -->
-		    <div class="crt-smallBench" id="smallBench" style="display: none;">
+	  <li> <!-- litet Fönster -->
+	    <div class="crt-smallBench" id="smallBench" style="display: none;">
               <h4>Skapa litet bord <button onclick="visablitySmall()">X</button></h4>
               <div class="smallBench-input">
                 <div class="smallBench-pupil">
@@ -72,12 +72,12 @@ include("auth_session.php");
                 <button id="crt-Pupil" type="submit">Skapa bordet</button>
               </div>
             </div>
-		  </li>
-		  <li> <!-- Stort Fönster -->
-		    <div class="crt-bigBench" id="bigBench" style="display: none">
+	  </li>
+	  <li> <!-- Stort Fönster -->
+	    <div class="crt-bigBench" id="bigBench" style="display: none">
               <div class="crt-header">
-			    <h4>Skapa stort bord: <button onclick="visablityBig()">X</button></h4>
-			  </div>
+	        <h4>Skapa stort bord: <button onclick="visablityBig()">X</button></h4>
+	      </div>
               <div class="bigBench-input">
                 <div class="bigBench-pupil">
                   Elevernas namn:<br/>
@@ -87,7 +87,7 @@ include("auth_session.php");
                 <button id="crt-pupils" type="submit">Skapa bordet</button>
               </div>
             </div>
-		  </li>
+	  </li>
           <li> <!-- Profile -->
             <div class="profile-details"> <!-- Profile -->
               <div class="profile-content">
