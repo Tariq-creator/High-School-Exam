@@ -1,16 +1,16 @@
 * {
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	font-family: 'poppins', sans-serif;
-	color: white;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: 'poppins', sans-serif;
+  color: white;
 	
 }
 
 img.background-img {
-	position: absolute;
-	top: -100px;
-	width: 100%;
+  position: absolute;
+  top: -100px;
+  width: 100%;
 }	
 
 form {
@@ -27,58 +27,58 @@ form {
 }
 
 .login-details {
-	position: absolute;
-	top: 25%;
-	left: 16%;
-	grid-column: 1/4;
-	grid-row: 1/2;
-	text-align: center;
-	line-height: 37px;
-	border-bottom: 2px solid white;
+  position: absolute;
+  top: 25%;
+  left: 16%;
+  grid-column: 1/4;
+  grid-row: 1/2;
+  text-align: center;
+  line-height: 37px;
+  border-bottom: 2px solid white;
 }
 
 .login-details p {
-	font-size: 13px;
+  font-size: 13px;
 }
 
 .login-user, .login-password, .confirm-password{
-	margin-top: 2px;
-	height: 30px;
-	width: 300px;
-	color: black;
-	font-size: 15px;
-	padding-left: 5px;
-	border: none;
-	border-radius: 2px;
+  margin-top: 2px;
+  height: 30px;
+  width: 300px;
+  color: black;
+  font-size: 15px;
+  padding-left: 5px;
+  border: none;
+  border-radius: 2px;
 }
 
 .login-user:focus, .login-password:focus {
-	outline: none;
+  outline: none;
 }
 
 .user {
-	grid-column: 2/3;
-	grid-row: 2/3;
+  grid-column: 2/3;
+  grid-row: 2/3;
 }
 
 .password {
-	grid-column: 2/3;
-	grid-row: 3/4;
+  grid-column: 2/3;
+  grid-row: 3/4;
 }
 
 .verify-password {
-	grid-column: 2/3;
-	grid-row: 4/5;
+  grid-column: 2/3;
+  grid-row: 4/5;
 }
 
 .login-button {
-	grid-column: 2/3;
-	grid-row: 5/6;
-	height: 30px;
-	width: 300px;
-	background-color: #55517D;
-	border: none;
-	border-radius: 2px;
+  grid-column: 2/3;
+  grid-row: 5/6;
+  height: 30px;
+  width: 300px;
+  background-color: #55517D;
+  border: none;
+  border-radius: 2px;
 }
 
 .login-button:hover {
@@ -86,17 +86,17 @@ form {
 }
 
 .link {
-	grid-column: 2/3;
-	grid-row: 5/6;
-	margin-top: 35px;
-	font-size: 12.5px;
+  grid-column: 2/3;
+  grid-row: 5/6;
+  margin-top: 35px;
+  font-size: 12.5px;
 }
 
 a {
-	color: #766FC9;
-	text-decoration: none;
+  color: #766FC9;
+  text-decoration: none;
 }
 
 a:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
