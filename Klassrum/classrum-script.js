@@ -2,7 +2,7 @@
 let smallBench = document.getElementById('smallBench');
 let bigBench = document.getElementById("bigBench");
 
-//Animation för att öppna en kategori
+//Animation for the arrows
 let arrow = document.querySelectorAll(".arrow");
 for (var i = 0; i < arrow.length; i++) {
     arrow[i].addEventListener("click", (e)=>{
@@ -11,7 +11,7 @@ for (var i = 0; i < arrow.length; i++) {
   });
 };
 
-// Visa/dölja fönster ("smallBench")
+// show/hide window ("smallBench")
 function visablitySmall() {
   if (smallBench.style.display === "none") {
     smallBench.style.display = "block";
@@ -21,7 +21,7 @@ function visablitySmall() {
   }
 };
 
-// Visa/dölja fönster ("bigBench")
+// show/hide window ("bigBench")
 function visablityBig() {
   if (bigBench.style.display === "none") {
     bigBench.style.display = "block";
@@ -31,17 +31,17 @@ function visablityBig() {
   }
 };
 
-//Skapa bord för en elev
+//Create bench with one pupil
 document.getElementById("crt-Pupil").addEventListener("click", 
 function() {
-  //Skapa ett bord
+  //create bench
   let smallBench = document.createElement("div");
   smallBench.id = "pupil";
 
-  //Add styling
+  //Bench styling
+  smallBench.style.position = "absolute";
   smallBench.style.width = "90px";
   smallBench.style.height = "50px";
-  smallBench.style.position = "absolute";
   smallBench.style.top = "70px";
   smallBench.style.left = "270px";
   smallBench.style.borderRadius = "4px";
@@ -54,7 +54,8 @@ function() {
   //Draggable function
   $(function(){
     $(smallBench).draggable({
-      containment: "#home-section"
+      containment: "#home-section",
+	  grid: [ 70, 68 ]
     });
   });
 
@@ -71,18 +72,18 @@ function() {
   document.getElementById("pupil").value = "";
 });
 
-//Skapa bord för två elever
+//Create bench for two pupils
 document.getElementById("crt-pupils").addEventListener("click", 
 function() {
-  //Skapa ett bord
+  //Create bench
   let bigBench = document.createElement("div");
   bigBench.id = "pupils";
   
-  //Variabel för pupils
+  //Variable for each pupil
   let pupil_One = document.getElementById("pupil_One").value;
   let pupil_Two = document.getElementById("pupil_Two").value;
 
-  //Add styling
+  //Bench styling
   bigBench.style.position = "absolute";
   bigBench.style.width = "100px";
   bigBench.style.height = "90px";
@@ -95,13 +96,12 @@ function() {
   bigBench.style.background = "#995722";
   bigBench.style.color = "white";
   bigBench.innerHTML = pupil_One + "<br/>" + pupil_Two;
-  //bigBench.innerHTML = document.getElementById("pupil_One").value + "<br />";
-  //bigBench.innerHTML += document.getElementById("pupil_Two").value;
 
   //Draggable function
   $(function(){
     $(bigBench).draggable({
-      containment: "#home-section"
+      containment: "#home-section",
+	  grid: [ 69, 55 ]
     });
   });
 
