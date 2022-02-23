@@ -13,7 +13,7 @@
     if (isset($_POST['username'])) {
         $username = stripslashes($_REQUEST['username']);    // removes backslashes
         $username = mysqli_real_escape_string($con, $username);
-		ucfirst($username);
+	ucfirst($username);
         $password = stripslashes($_REQUEST['password']);
         $password = mysqli_real_escape_string($con, $password);
         // Check user exist in the database
@@ -27,25 +27,25 @@
             header("Location: classrum.php");
         } else {
             // Alert Wrong user and or password
-			header("Location: login.php");
+	    header("Location: login.php");
         }
     } else {
 		
 ?>
-	<img class="background-img" src="background.jpg">
+    <img class="background-img" src="background.jpg">
     <form method="post" name="login">
-	  <div class="login-details">
+      <div class="login-details">
         <h1>Elevplacering</h1>
-	    <p>En platform för att underlätta lärarnas elevplacering!</p>
-	  </div>
-	  <div class="user">
-	    <span>Lärarens namn:</span><br/>
+	<p>En platform för att underlätta lärarnas elevplacering!</p>
+      </div>
+      <div class="user">
+	<span>Lärarens namn:</span><br/>
         <input type="text" class="login-user" name="username" autofocus="true"/>
-	  </div>
-	  <div class="password">
-	    <span>Lösenord:</span><br/>
-	    <input type="password" class="login-password" name="password"/>
-	  </div>
+      </div>
+      <div class="password">
+	<span>Lösenord:</span><br/>
+	<input type="password" class="login-password" name="password"/>
+      </div>
       <input type="submit" class="login-button" value="Logga in" name="submit"/>
       <p class="link">Behöver du ett konto? <a href="registration.php">Klicka här</a></p>
     </form>
