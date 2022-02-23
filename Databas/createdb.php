@@ -37,9 +37,9 @@ $sql = "CREATE TABLE users (
 )";
 
 if ($conn->query($sql) === TRUE) {
-  echo "<br />Table users created successfully";
+  echo "<br/>Table users created successfully";
 } else {
-  echo "Error creating table: " . $conn->error;
+  echo "<br/>Error creating table: " . $conn->error;
 }
 
 $conn->close();
