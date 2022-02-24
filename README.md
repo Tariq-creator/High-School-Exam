@@ -1,5 +1,5 @@
 Apps to download (mandatory):
-XAMPP (download newest version based on operationsystem): https://www.apachefriends.org/download.html
+XAMPP (download newest version): https://www.apachefriends.org/download.html
 Notepad++ (download newest version): https://notepad-plus-plus.org/downloads/
 
 Step by step:
